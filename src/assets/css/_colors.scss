@@ -7,7 +7,10 @@
 }
 html.dark{
     --theme-bg: #1b1925;
-    --light:#3c394d
+    --light:#3c394d;
+    .entro{
+        color: white;
+    }
 }
 /* Colors */
 $primary: #80b4c6;
