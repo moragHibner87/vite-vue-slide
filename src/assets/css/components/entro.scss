@@ -94,4 +94,35 @@
       transform: translateY(-40px);
     }
   }
- 
+
+//snap-scroll
+.snap-scroll{
+  display:grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 28%;
+  gap: 1rem;
+  padding:.8rem 1.2rem;
+  overflow: auto;
+  overscroll-behavior-inline: contain;
+  @include mobile{
+    grid-auto-columns: 60vw;
+  }
+
+}
+.snap-item{
+  border-radius:8px;
+  background-color: rgb(22, 18, 32);
+  padding:.8rem;
+  color: $light;
+  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.55);
+  @include dark {
+    color: $text;
+    background-color: $light;
+  }
+}
+.snap-img{
+  width:100%;
+  aspect-ratio: 1.5 /1;
+  margin-bottom:.5rem;
+  border-radius:3px;
+}

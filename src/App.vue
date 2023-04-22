@@ -6,6 +6,7 @@ import Hero from '@/components/Hero.vue'
 import Entro from '@/components/Entro.vue'
 import Rows from '@/components/Rows.vue'
 import Slider from '@/components/Slider.vue'
+import Snap from './components/Snap.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Slider from '@/components/Slider.vue'
       <Entro/>
       <Rows/>
       <Slider/>
+      <Snap/>
     </main>
     <Footer/>
     <HelloWorld msg="Hello Vue 3.0 + Vite!!" />

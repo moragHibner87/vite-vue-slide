@@ -13,3 +13,9 @@
         @content;
     }
 }
+//dark
+@mixin dark{
+    html.dark & {
+        @content;
+    }
+}
