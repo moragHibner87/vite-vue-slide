@@ -5,6 +5,9 @@
             <span>Your next dream vacation</span>
             <span>Your next dream vacation</span>
         </h1>
+        <div ref="fadeOuts2">
+            <span>test</span>
+        </div>
     </div>
     <img class="img-cover img-scroll" src="../assets/images/hero.jpg" alt=""/>
 </section>
@@ -14,12 +17,15 @@
 import {ref, onMounted} from 'vue';
 import { gsap, Power2  } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {animationInOut} from '../composables/animationInOut'
+import {animationInOut, animationInOut2} from '../composables/animationInOut'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const fadeOuts = ref(null)
 animationInOut(fadeOuts)
+
+const fadeOuts2 = ref(null)
+animationInOut2(fadeOuts2)
 
 onMounted(() => {
     //img-scroll
