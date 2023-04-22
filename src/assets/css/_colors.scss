@@ -1,0 +1,36 @@
+:root{
+    --primary: #80b4c6;
+    --light: #ccc;
+    --text: #0c1d4d;
+    --white: white;
+    --theme-bg: white
+}
+html.dark{
+    --theme-bg: #1b1925;
+    --light:#3c394d
+}
+/* Colors */
+$primary: #80b4c6;
+$light: #ccc;
+$text: #0c1d4d;
+$white: white;
+$bg-light: white;
+
+$primary-dark: #3c394d;
+$text-dark: white;
+$bg-dark: #1b1925;
+
+$color: var(--dark);
+$dark-color: #333333;
+$light-color: #ffffff;
+
+
+.text-primary{
+    color: $primary;
+}
+.text-text{
+    color: $text;
+}
+.bg-text{
+    background-color: $text;
+}

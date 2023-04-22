@@ -1,0 +1,97 @@
+.entro {
+    p{
+        font-size:1.8vw;
+        max-width:80%;
+        margin:0 auto;
+    }
+  }
+  .categories .row{
+    padding:5% 10%;
+    background-color: #f3dff5;
+  }
+  .categories .row:nth-of-type(2n + 2){
+    background-color: rgb(202, 235, 224);
+    flex-direction: row-reverse;
+  }
+  .categories .row .flex-1{
+    padding:0 5%;
+  }
+  .categories .row .title{
+    font-size:2.5vw;
+  }
+  .cat-wrap-img{
+    aspect-ratio:1.5/1;
+    width:45%;
+    @include mobile{
+      width:100%;
+    }
+  }
+  .card-area{
+    padding:5rem 0;
+  }
+  .card{
+    max-width:400px;
+    width:80%;
+    aspect-ratio: 1.6/1;
+    background-color: rgb(13, 7, 42);
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    transform: perspective(5000px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+    transform-style: preserve-3d;
+    color: pink;
+    text-shadow: 0 0 10px currentColor;
+    transition: .3s;
+    &::after,&::before{
+      content: "";
+      display:block;
+      border-radius:15px;
+      position: absolute;
+    }
+    &::after{
+      inset: -1rem;
+      background: linear-gradient(90deg, red, blue);
+      transform: translateZ(-50px); 
+    }
+    &::before{
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.464);
+      filter: blur(15px);
+      transform: translateZ(-49px);
+    }
+  }
+  .snake{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+    gap: .2rem;
+    padding-top:3rem;
+    span{
+      display:block;
+      width:8px;
+      height:8px;
+      border-radius:100%;
+      background-color: rgba(114, 9, 114, 0.793);
+      animation: rise 2s infinite alternate;
+    }
+    @for $i from 1 through 6{
+      span:nth-child(#{$i}){
+        animation-delay: .15s * $i;
+      }
+    }
+  
+  
+  }
+  @keyframes rise {
+    0%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(-40px);
+    }
+  }
+ 

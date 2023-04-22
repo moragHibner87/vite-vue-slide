@@ -1,0 +1,28 @@
+/* Hero */
+.hero {
+    .inner_width{
+        height:40vw;
+        position: relative;
+        z-index: 1;
+        padding-bottom:5%;
+    }
+    h1{
+        color:white;
+        font-size:6vw;
+        max-width:70%;
+        margin:auto;
+        text-align:center;
+        line-height: 1;  
+    }
+    &:before{
+        content:"";
+        display:block;
+        width:100%;
+        position:absolute;
+        bottom:0;
+        left:0;
+        z-index:1;
+        height:100%;
+        background: linear-gradient(0deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0) 100%);
+    }
+  }

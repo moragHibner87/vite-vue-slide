@@ -1,0 +1,23 @@
+@import '@/assets/css/variables';
+@import '@/assets/css/colors.scss';
+@import '@/assets/css/fonts.scss';
+@import '@/assets/css/base';
+@import '@/assets/css/helpers.scss';
+
+@import '@/assets/css/components/header.scss';
+@import '@/assets/css/components/hero.scss';
+@import '@/assets/css/components/entro.scss';
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
